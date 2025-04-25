@@ -7,6 +7,11 @@ public class GestorEstudiantes {
     // Calcula la nota media de un estudiante
     public static double calcularNotaMedia(Estudiante estudiante) {
         double suma = 0;
+
+        if (estudiante.getNotas().length == 0) {
+            return 0.0;
+        }
+
         for (int i = 0; i < estudiante.getNotas().length; i++) { // Error: índice fuera de rango
             suma += estudiante.getNotas()[i];
         }

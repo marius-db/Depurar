@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,6 +35,8 @@ class GestorEstudiantesTest {
         Estudiante[] empty = new Estudiante[]{};
         Estudiante result = GestorEstudiantes.encontrarMejorEstudiante(empty);
         System.out.println(result.getNombre());
+        System.out.println(result.getEdad());
+        System.out.println(Arrays.toString(result.getNotas()));
     }
 
     //Error 4

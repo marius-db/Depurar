@@ -10,14 +10,23 @@ public class Estudiante {
     }
 
     public String getNombre() {
+        if(nombre == null){
+            System.out.println("Name not found or student not existing");
+        }
         return nombre;
     }
 
     public int getEdad() {
+        if(edad == -1){
+            System.out.println("Age not found or student not existing");
+        }
         return edad;
     }
 
     public double[] getNotas() {
+        if(notas == null){
+            System.out.println("Grades not found or student not existing");
+        }
         return notas;
     }
 }

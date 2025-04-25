@@ -30,6 +30,9 @@ public class GestorEstudiantes {
                 mejor = estudiante;
             }
         }
+        if(mejor == null){
+            return new Estudiante(null,-1,null);
+        }
         return mejor; // Error si la lista está vacía
     }
 
